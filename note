@@ -1,0 +1,29 @@
+HTML 标签介绍:1.标签名大小写不敏感。2.标签分为1.基本属性：可以修改简单的样式结果 2.事件属性：可以直接设置事件响应后的代码
+标签又分为单标签和双标签
+常用标签介绍:
+1.<font color显示颜色 face显示字体 size显示大小></font>
+
+2.< 用&lt; >用 &gt; 表示   空格用&nbsp; 表示
+
+3.标题标签:从<h1>到<h6>表示从大到小 align属性表示对齐属性 left左对齐 righe 右对齐 center 其中
+
+4.超链接:在网页中可以点击的链接 <a>超链接
+hred属性设置链接地址 target属性设置哪个目标进行跳转 self当前页面 blank新页面
+
+5.列表标签 <ul>无序标签type属性可以修改列表项       <li>列表项 <ol>有序标签
+
+6.img标签:可以在页面上显示图片<img>图片标签
+src属性设置图片的路径 width属性设置图片的宽度 height属性设置图片的高度 border属性设置图片边框的大小 alt属性设置当前指定路径找不到图片时,用来替代的文本内容
+ 绝对路径:http://ip:port/工程名/资源路径 相对路径:.表示当前文件所在的目录 ..表示当前文件所在的上一级目录 文件名 表示当前文件所在目录的文件
+
+7.表格标签:<table>是表格标签
+border属性设置表格标签 width属性设置宽度 height属性设置长度 <b>标签是加粗标签 <tr>是行标签 <th>是表头标签 <td>是单元格标签
+colsapn 属性设置跨列 rowspan 属性设置跨行
+
+8.iframe标签:可以打开小窗口加载页面.<iframe>标签可以显示一个小页面.
+和a标签组合组合使用:1.在iframe标签中使用name属性定义一个名称 2.在a标签的target属性上设置iframe的name的属性值 在<a>中定义target为iframe中的name
+
+9.表单标签:<form>标签 表示一个表单 <input>标签
+属性type  text是文本输入框 password为密码输入框 radio为单选框 reset为重置 submit为提交 file为文件上传 hidden为隐藏域(不需要用户参与,但依然发送给服务端) value为显示的文字 name属性可以对其分组 value默认值为一开始显示的内容 checked属性为checked表示默认选中
+<Select>标签为下拉列表框 <option>标签为下拉列表框中的选项 selected属性为selected设置默认选中
+<textarea>标签为多行文本输入框 rows属性设置显示几行的高度 cols属性设置每行可以显示几个字符宽度
