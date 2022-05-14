@@ -24,6 +24,64 @@ colsapn 属性设置跨列 rowspan 属性设置跨行
 和a标签组合组合使用:1.在iframe标签中使用name属性定义一个名称 2.在a标签的target属性上设置iframe的name的属性值 在<a>中定义target为iframe中的name
 
 9.表单标签:<form>标签 表示一个表单 <input>标签
-属性type  text是文本输入框 password为密码输入框 radio为单选框 reset为重置 submit为提交 file为文件上传 hidden为隐藏域(不需要用户参与,但依然发送给服务端) value为显示的文字 name属性可以对其分组 value默认值为一开始显示的内容 checked属性为checked表示默认选中
+属性type  text是文本输入框 password为密码输入框 action属性设置提交得服务器地址 method属性设置提交的方式GET或POST  radio为单选框 reset为重置 submit为提交 file为文件上传 hidden为隐藏域(不需要用户参与,但依然发送给服务端) value为显示的文字 name属性可以对其分组 value默认值为一开始显示的内容 checked属性为checked表示默认选中
 <Select>标签为下拉列表框 <option>标签为下拉列表框中的选项 selected属性为selected设置默认选中
 <textarea>标签为多行文本输入框 rows属性设置显示几行的高度 cols属性设置每行可以显示几个字符宽度
+表单提交的时候，数据没有发给服务端三种情况：1.表单没有name属性值 2单选复选（或下拉列表的option标签）都需要添加value属性 3.表单项不在提交的form标签中
+GET请求特点：
+1.浏览器地址栏中是action属性+请求参数 格式是：name=value&&name=value
+2、不安全
+3、他有数据长度的限制
+POST请求的特点：
+1、地址栏中只有action属性值
+2.要安全
+3.理论上没有数据长度的限制
+
+10.<div>标签 默认独占一行 <span>标签 它的长度是封装数据的长度 <p>标签 默认会在段落上方或下方空出一行
+
+CSS技术
+CSS是层叠样式表单,是用于增强网页控制于页面分离的一种技术
+语法规则: (选择器)p{
+    (属性)font-size:80px(值)
+}
+选择器:决定受CSS样式影响的HTML元素 属性是你要改变的样式名,并且每个属性都有一个值.使用分号隔开
+PS:每行建议只描述一个属性
+
+CSS和HTML的结合方式
+<style>标签专门用来定义css样式代码
+第一种:在标签的style属性上设置"key:value value;",修改标签样式
+第二种:在head标签中,使用style标签定义自己需要的css样式
+格式如下:xxx{
+    key:value value;
+}
+第三种:把css样式写成一个单独的css文件,通过link标签引入即可 <link>标签专门用来引入CSS代码
+
+CSS选择器
+标签名选择器
+格式是:
+标签名{
+    属性:值;
+}
+标签名选择器,可以决定那些标签被动的使用这个样式
+
+id选择器
+格式是
+#id属性值{
+    属性:值;
+}
+id选择器,可以通过id属性选择性的去使用这个样式
+
+class选择器
+格式:
+.class属性值{
+    属性:值;
+}
+class类型选择性,可以通过class属性有效的选择性去使用这个样式
+
+组合选择器
+格式:
+选择器1,选择器2,选择器n{
+    属性:值
+}
+
+常用样式:
