@@ -163,11 +163,33 @@ onsubmit 表单提交事件  常用于表单提交前,验证所有表单项是�
 onload事件
 浏览器解析完页面后自动触发的事件
 动态注册 window.onload =function(){};  //固定写法
-P49
 
+onclick事件 点击
+动态注册 window.onload =function(){}
+1.获取标签对象 document.getElementById
+2.通过标签对象.onclick =function(){}
 
+onblur失去焦点事件
+动态注册 window.onload =function(){
+1.获取标签对象 var element =document.getElementById
+2.通过标签对象.onblur =function(){}
+}
 
+oncharge 内容发生改变事件
+动态注册 window.onload =function(){
+1.获取标签对象 var element =document.getElementById
+2.通过标签对象.onchange =function(){}
+}
 
+onsubmit事件
+静态注册<form action="js.html" method="get" onsubmit="return onsubmtfun()"> return不能少
+动态注册 window.onload =function(){
+1.获取标签对象 var element =document.getElementById
+2.通过标签对象.onsubmit =function(){
+            return true/false;}//防止表单不合法
+}
+
+P53
 
 
 

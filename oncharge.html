@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function onchargefun(){
+            alert("123");
+        }
+
+        window.onload =function (){
+            var effect =document.getElementById("1");
+            effect.onchange=function (){
+                alert("123")
+            }
+        }
+    </script>
+</head>
+<body>
+请选择:
+<!--静态注册-->
+<select onchange="onchargefun()">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+</select>
+
+<select id="1">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+</select>
+
+</body>
+</html>
