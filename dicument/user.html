@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function onclickfun(){
+            var us1er=document.getElementById("user");
+            var username=user.value;
+            alert(us1er.value);
+            var path=/^w{5,12}$/;
+            var user=document.getElementById("use")
+            user.innerHTML="dad"
+            if (path.test(username)){
+                user.innerHTML="da";
+            }else {
+                user.innerHTML="dad";
+
+            }
+        }
+    </script>
+</head>
+<body>
+用户名：<input type="text" id="user" value="ad">
+<span id="use" style="color: red"></span>
+<button onclick="onclickfun()">校验</button>
+</body>
+</html>

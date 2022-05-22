@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        var pattern=new RegExp("e");//表示字符串中,必须包含字母e
+        var path2D=/e/;
+        var tests=/[abc]/;//表示字符串中,是否包含字母a或b或c
+        var tests=/[a-z]/;//表示要求字符串是否包含小写字母
+        var tests=/[0-9]/;//表示要求字符串是否包含数字
+        var scheduledSourceNode=/\w/;//表示要求字符串 是否包含字母,数字,下划线
+        var strategy="adv";
+        var path=/a+/;//表示字符串中是否包含至少一个a
+        var sampler=/a*/;//表示要求字符串包含是否零个或多个a
+        var sampler=/a?/;//表示字符串是否包含一个或多个a
+        var sdpType=/a{3}/;//表示字符串是否连续包含三个a
+        var dSettings=/a{3,5}/;//表示字符串是否包含至少3个连续的a,最多5个连续的a
+        var oaepParams=/a$/;//表示字符串必须以a结尾
+        var aspectRatio=/^a/;//表示字符串必须以a开头
+        var addEventL=/^a{3,5}$/;//表示字符串从头到尾完全匹配a
+        alert(pattern.test(strategy));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
