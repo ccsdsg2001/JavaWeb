@@ -202,4 +202,110 @@ DOCUMENT对象
 3.test()方法测试某个字符串. 匹配返回true 不匹配返回false
 
 
-p57
+DOM对象的三个查询方法
+document.getElementById()方法:返回拥有指定ID的第一个对象的引用
+document.getElementByName():返回带有指定名称对象的集合,这个集合操作跟数组一样.集合的元素顺序是从上到下的顺序
+document.getElementByTagName():按照标签名
+PS:如果有ID属性,使用id方法,后Name,再TagName;以上方法,一定在页面加载完成之后,才能查询到标签对象
+
+节点(标签对象)的常用属性和方法
+getElementsByTagName():获取当前节点的指定标签名孩子节点
+appendChild(oChildNode)方法:添加一个字节点,oChildNode就是添加的孩子节点
+属性
+childNodes:获取当前节点的所有字节点
+firstChild:获取当前节点的第一个子节点
+lastChild:获取当前节点的最后一个子节点
+parentNode:获取当前节点的父节点
+nextSibling:获取当前节点的下一个节点
+previousSibling:获取当前节点的上一个节点
+className:用于获取或设置标签的class属性值
+innerHTML:获取设置起始标签和结束标签中的内容
+innerText:表示获取设置起始标签和结束标签中的文本
+
+JQuery(查询)
+为按钮添加点击响应函数
+$(function (){//相当于window.onload
+		var $btnId = $("#btnId");//1.使用jQuery查询到标签对象
+		$btnId.click(function (){//2,使用标签对象.click(function(){}
+			alert("jquer");
+		})
+
+JQuery核心函数
+核心函数的4个作用
+传入参数为[函数]时：在文档加载完成后执行这个函数
+    $(function (){
+    })
+传入参数为[HTML字符串]时：根据这个字符串创建元素节点对象
+    $("<div>\n" +
+        "    <span>1</span>\n" +
+        "    <span>2</span>\n" +
+        "</div>").appendTo("body");
+传入参数为[选择器字符串]时：根据这个字符串查找元素节点对象.选择字符串为:1.id属性值时,根据id查询标签对象.2.标签名,根据标签名查找对象,3.类型选择器,根据class属性查询标签对象
+    $("button")
+传入参数为[DOM对象]时：将DOM对象包装为jQuery对象返回
+
+JQuery对象和DOM对象使用区别
+两者都不能使用对方的属性和方法
+
+DOM对象和JQuery对象互转
+1.dom对象转化为Jquery对象
+(1)先有DOM对象(2)$(DOM对象)可以转换为jquery对象
+2.JQuery对象转为dom对象
+(1)先有jQuery对象(2)jQuery对象[下标]取出相应的DOM对象
+
+JQuery基础选择器
+基本选择器
+#ID 根据ID查找标签对象
+.class 根据class查找标签对象
+element 根据标签名查找标签对象
+* 表示任意的,所有的元素
+selector1,selector2组合选择器:合并选择器1,选择器2的结果并返回
+
+层级选择器
+ancestor descendant 后代选择器 ：在给定的祖先元素下匹配所有的后代元素
+parent > child 子元素选择器：在给定的父元素下匹配所有的子元素
+prev + next 相邻元素选择器：匹配所有紧接在 prev 元素后的 next 元素
+prev ~ sibings 之后的兄弟元素选择器：匹配 prev 元素之后的所有 siblings 元素
+
+过滤选择器
+:first 获取第一个元素
+:last 获取最后个元素
+:not(selector) 去除所有与给定选择器匹配的元素
+:even 匹配所有索引值为偶数的元素，从 0 开始计数
+:odd 匹配所有索引值为奇数的元素，从 0 开始计数
+:eq(index) 匹配一个给定索引值的元素
+:gt(index) 匹配所有大于给定索引值的元素
+:lt(index) 匹配所有小于给定索引值的元素
+:header 匹配如 h1, h2, h3 之类的标题元素
+:animated 匹配所有正在执行动画效果的元
+
+内容过滤器
+:contains(text) 匹配包含给定文本的元素
+:empty 匹配所有不包含子元素或者文本的空元素
+:parent 匹配含有子元素或者文本的元素
+:has(selector) 匹配含有选择器所匹配的元素的元素
+
+属性过滤器
+[attribute] 匹配包含给定属性的元素。
+[attribute=value] 匹配给定的属性是某个特定值的元素
+[attribute!=value] 匹配所有不含有指定的属性，或者属性不等于特定值的元素。
+[attribute^=value] 匹配给定的属性是以某些值开始的元素
+[attribute$=value] 匹配给定的属性是以某些值结尾的元素
+[attribute*=value] 匹配给定的属性是以包含某些值的元素
+[attrSel1][attrSel2][attrSelN] 复合属性选择器，需要同时满足多个条件时使用
+
+表单过滤器
+
+
+
+
+p75
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+.logo {
+    width: 516px; 
+    height: 37px;
+    background-position: 0px 0px;
+    background-size: contain;
+    background-image: url("https://edu-image.nosdn.127.net/f24bc450d3c643dd9fb61e4c77928acd.png?imageView&quality=100");
+    color: #000000;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.footer {
+    width: 1903px;
+    height: 209px;
+    background-color: #272727;
+    border-color: #272727;
+    border-style: solid none none;
+    color: #000000;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.p{
+    width: 516px;
+    height: 20px;
+    color: #999999;
+    font-family: -apple-system;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.one{
+    margin: 31px;
+    width: 1205px;
+    height: 115px;
+    color: #000000;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.two{
+    width: 128px;
+    height: 115px;
+    color: #000000;
+    font-size: 12px;
+    line-height: 20px;
+}

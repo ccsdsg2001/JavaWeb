@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function oncl(){
+            //1.当操作一个标签的时候,一定要获取这个标签的对象
+            var elementById = document.getElementById("user");
+            var value = elementById.value;
+            //验证字符串符合规则,使用正则表达式
+            var pattern=/^w{5,12}$/;
+            var elementById1 = document.getElementById("userna");
+
+
+            if (pattern.test(value)){//test()方法匹配字符串,是否符合我的规则
+                // alert("hefa")
+                elementById1.innerHTML="gheaf";
+            }else {
+
+                elementById1.innerHTML="buf";
+            }
+        }
+    </script>
+</head>
+<body>
+用户名：<input type="text" id="user" value="cs">
+<span id="userna"></span>
+<button onclick="oncl()">校验</button>
+</body>
+</html>

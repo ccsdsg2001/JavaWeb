@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function onblur1(){//静态注册
+            //console是控制台对象,用来浏览器打印输出
+            console.log("用来")
+        }
+
+        //动态注册
+        window.onload = function (){
+            //1.获取标签对象
+            var elementById = document.getElementById("blur");
+            //2.通过标签对象.事件名=function
+            elementById.onblur=function (){
+                console.log("ni")
+            }
+        }
+    </script>
+</head>
+<body>
+        用户名:<input type="text" onblur="onblur1()"><br/>
+        用户名:<input type="text" id="blur"><br/>
+</body>
+</html>

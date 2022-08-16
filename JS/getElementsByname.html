@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function cheakAll(){
+            var ByName = document.getElementsByName("hobby");
+            ByName[0].checked=false
+            // alert(ByName[0].checked);//checked表示复选框的选中状态,选择是true,选不中是false
+            for (var i=0;i<ByName.length;i++){
+                ByName[i].checked=true;
+            }
+        }
+
+        function checkNo(){
+            var ByName = document.getElementsByName("hobby");
+            // alert(ByName[0].checked);//checked表示复选框的选中状态,选择是true,选不中是false
+            for (var i=0;i<ByName.length;i++){
+                ByName[i].checked=false;
+            }
+        }
+
+
+        function checkre(){
+            var ByName = document.getElementsByName("hobby");
+            // alert(ByName[0].checked);//checked表示复选框的选中状态,选择是true,选不中是false
+            for (var i=0;i<ByName.length;i++){
+                ByName[i].checked=!ByName[i].checked;
+        }
+        }
+
+    </script>
+</head>
+<body>
+<input type="checkbox" name="hobby" value="c">c
+<input type="checkbox" name="hobby" value="ja">ja
+<input type="checkbox" name="hobby" value="js">js
+</br>
+<button onclick="cheakAll()">全选</button>
+<button onclick="checkNo()">全不选</button>
+<button onclick="checkre">反选</button>
+</body>
+</html>
