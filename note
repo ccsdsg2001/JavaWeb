@@ -352,10 +352,25 @@ replaceAll() a.replaceAll(b) 用 a 替换掉所有 b
 remove() a.remove(); 删除 a 标签
 empty() a.empty(); 清空 a
 
+CSS样式操作
+addClass() 添加样式
+removeClass() 删除样式
+toggleClass() 有就删除,没有就添加样式
+offset() 获取和设置元素的坐标
+
+JQuery动画
+基本动画
+show() 将隐藏的元素显示
+hide() 将可见的元素隐藏
+toggle() 可见就隐藏,不可见就显示
+以上方法都可以添加参数,第一个参数是动画执行时长,以毫秒为单位.第二个参数是动画的回调函数
+fadein() 淡入
+fadeout() 淡出
+fadeto() 在指定时长内将透明度修改到指定的值
+fadeToggle() 淡入/淡出
 
 
-p82
-
+p86
 
 
 

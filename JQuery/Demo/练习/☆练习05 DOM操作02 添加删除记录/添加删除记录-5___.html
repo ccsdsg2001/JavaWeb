@@ -6,7 +6,40 @@
 <link rel="stylesheet" type="text/css" href="styleB/css.css" />
 <script type="text/javascript" src="../../script/jquery-1.7.2.js"></script>
 <script type="text/javascript">
+	$(function (){
+		var de= function (){
+			var parent = $(this).parent().parent();
+			var text = parent.find("td:first").text();
+			//confirm是一个确认提示框函数,当点击了确定,就返回true,点击取消,就返回false
+			if(confirm("你确定要删除"+text+"吗")){
+				parent.remove();
+			}
+			return false;
+		}
+		$("#addEmpButton").click(function (){
+			var val = $("#empName").val();
+			var val1 = $("#email").val();
+			var val2 = $("#salary").val();
 
+
+			var $1 = $("<tr>"+"<td>"+ val +"</td>" +
+					"<td>"+val1+"</td>" +
+					"<td>"+val2+"</td>" +
+					"<td><a href=\"deleteEmp?id=002\">Delete</a></td>"+"</tr>");
+			$1.appendTo($("#employeeTable"))
+			$1.find("a").click(de)
+		});
+
+		$("a").click(function (){
+			var parent = $(this).parent().parent();
+			var text = parent.find("td:first").text();
+			//confirm是一个确认提示框函数,当点击了确定,就返回true,点击取消,就返回false
+			if(confirm("你确定要删除"+text+"吗")){
+				parent.remove();
+			}
+			return false;
+		})
+	})
 	
 	
 </script>

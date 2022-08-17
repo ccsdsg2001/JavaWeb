@@ -73,7 +73,24 @@ a:hover {
 <script type="text/javascript" src="script/jquery-1.7.2.js"></script>
 <script type="text/javascript">
 	$(function() {
+		$("li:gt(5):not(:last)").hide()//基本状态
+		$("div div a").click(function (){
+			$("li:gt(5):not(:last)").toggle();//让某些显示 或隐藏
 
+			if ($("li:gt(5):not(:last)").is(":hidden")){
+				$("div div a span").text("显示全部")
+				$("div div").removeClass();
+				$("div div").addClass("showmore");
+				$("li:contains('索尼')").addClass("promoted")
+
+			}else {
+				$("div div a span").text("显示精简")
+				$("div div").removeClass();
+				$("div div").addClass("showless");
+				$("li:contains('索尼')").addClass("promoted")
+			}
+			return false;
+		})
 	});
 </script>
 </head>
