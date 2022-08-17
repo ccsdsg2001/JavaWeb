@@ -295,9 +295,50 @@ prev ~ sibings 之后的兄弟元素选择器：匹配 prev 元素之后的所�
 [attrSel1][attrSel2][attrSelN] 复合属性选择器，需要同时满足多个条件时使用
 
 表单过滤器
+:input 匹配所有 input, textarea, select 和 button 元素
+:text 匹配所有 文本输入框
+:password 匹配所有的密码输入框
+:radio 匹配所有的单选框
+:checkbox 匹配所有的复选框
+:submit 匹配所有提交按钮
+:image 匹配所有 img 标签
+:reset 匹配所有重置按钮
+:button 匹配所有 input type=button <button>按钮
+:file 匹配所有 input type=file 文件上传
+:hidden 匹配所有不可见元素 display:none 或 input
+:enabled 匹配所有可用元素
+:disabled 匹配所有不可用元素
+:checked 匹配所有选中的单选，复选，和下拉列表中选中的 option 标签对象
+:selected 匹配所有选中的 option
 
+元素的筛选
+eq() 获取给定索引的元素 功能跟 :eq() 一样
+first() 获取第一个元素 功能跟 :first 一样
+last() 获取最后一个元素 功能跟 :last 一样
+filter(exp) 留下匹配的元素
+is(exp) 判断是否匹配给定的选择器，只要有一个匹配就返回，true
+has(exp) 返回包含有匹配选择器的元素的元素 功能跟 :has 一样
+not(exp) 删除匹配选择器的元素 功能跟 :not 一样
+children(exp) 返回匹配给定选择器的子元素 功能跟 parent>child 一样
+find(exp) 返回匹配给定选择器的后代元素 功能跟 ancestor descendant 一样
+next() 返回当前元素的下一个兄弟元素 功能跟 prev + next 功能一样
+nextAll() 返回当前元素后面所有的兄弟元素 功能跟 prev ~ siblings 功能一样
+nextUntil() 返回当前元素到指定匹配的元素为止的后面元素
+parent() 返回父元素
+prev(exp) 返回当前元素的上一个兄弟元素
+prevAll() 返回当前元素前面所有的兄弟元素
+prevUnit(exp) 返回当前元素到指定匹配的元素为止的前面元素
+siblings(exp) 返回所有兄弟元素
+add() 把 add 匹配的选择器的元素添加到当前 jquery
 
+JQuery属性操作 [不传参数是获取,传递参数是设置]
+html() 它可以设置和获取起始标签和结束标签中的内容。 跟 dom 属性 innerHTML 一样。
+text() 它可以设置和获取起始标签和结束标签中的文本。 跟 dom 属性 innerText 一样。
+val() 它可以设置和获取表单项的 value 属性值。 跟 dom 属性 value 一样
+attr() 可以设置和获取属性的值,不推荐操作checked,readOnly,selected,disabled等
+prop() 可以设置和获取属性的值,只推荐操作checked,readOnly,selected,disabled.
 
+DOM的增删改
 
 p75
 

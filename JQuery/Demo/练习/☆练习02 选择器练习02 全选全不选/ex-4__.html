@@ -7,8 +7,29 @@
 <script type="text/javascript">
 	
 	$(function(){
-		
-		
+		$("#checkedAllBtn").click(function (){
+			$(":checkbox").prop("checked",true);
+		})
+		$("#checkedNoBtn").click(function (){
+			$(":checkbox").prop("checked",false);
+		})
+		$("#checkedRevBtn").click(function (){
+			$(":checkbox[name='items']").each(function (){
+				this.checked =!this.checked;
+			})
+			var length = $(":checked[name='items']").length;
+			var length2 = $(":checked[name='items']:checked").length;
+			if (length==length2){
+				$("#checkedAllBox").prop("checked",true);
+			}else {
+				$("#checkedAllBox").prop("checked",false);
+			}
+		})
+		$("#sendBtn").click(function (){
+			$(":checked[name='items']:checked").each(function (){
+				alert(this.value)
+			})
+		})
 	});
 	
 </script>
