@@ -17,7 +17,22 @@
 	</style>
 	<script type="text/javascript" src="script/jquery-1.7.2.js"></script>
 	<script type="text/javascript">
-		
+		$(function (){
+			$("button:eq(0)").click(function (){
+				$("select:eq(0) option:selected").appendTo($("select:eq(1)"));
+			})
+			$("button:eq(1)").click(function (){
+				$("select:eq(0) option").appendTo($("select:eq(1)"));
+			})
+
+			$("button:eq(2)").click(function (){
+				$("select:eq(1) option:selected").appendTo($("select:eq(0)"));
+			})
+
+			$("button:eq(3)").click(function (){
+				$("select:eq(1) option").appendTo($("select:eq(0)"));
+			})
+		})
 		
 	
 	</script>

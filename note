@@ -339,8 +339,22 @@ attr() 可以设置和获取属性的值,不推荐操作checked,readOnly,selecte
 prop() 可以设置和获取属性的值,只推荐操作checked,readOnly,selected,disabled.
 
 DOM的增删改
+内部插入：
+appendTo() a.appendTo(b) 把 a 插入到 b 子元素末尾，成为最后一个子元素
+prependTo() a.prependTo(b) 把 a 插到 b 所有子元素前面，成为第一个子元素
+外部插入：
+insertAfter() a.insertAfter(b) 得到 ba
+insertBefore() a.insertBefore(b) 得到 ab
+替换:
+replaceWith() a.replaceWith(b) 用 b 替换掉 a
+replaceAll() a.replaceAll(b) 用 a 替换掉所有 b
+删除：
+remove() a.remove(); 删除 a 标签
+empty() a.empty(); 清空 a
 
-p75
+
+
+p82
 
 
 
