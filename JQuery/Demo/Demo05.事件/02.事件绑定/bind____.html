@@ -8,12 +8,33 @@
 		<script type="text/javascript">
 		
 			$(function(){
+				$("h5").click(function (){
+					alert("123")
+				})
+
 				//1.通常绑定事件的方式
 				//2.jQuery提供的绑定方式：bind()函数
+
 				//3.合并“鼠标移入”和“鼠标移出”事件
+				$("h5").mouseover(function (){
+				})
 				//4.合并单击事件
+				$("h5").mouseout(function (){
+				})
+				$("h5").bind("click mouseover mouseout",function (){
+					console.log()
+				})
+				$("h5").one("click mouseover mouseout",function (){
+					console.log()
+				})
+				$("h5").unbind("click mouseover mouseout",function (){
+					console.log()
+				})
 				//5.切换元素可见状态
 				//6.只绑定一次
+				$("h5").live("click mouseover mouseout",function (){
+					console.log()
+				})
 			});
 		
 		</script>
