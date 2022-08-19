@@ -476,8 +476,32 @@ temp 专门用来存放 Tomcdat 运行时产生的临时数据
 webapps 专门用来存放部署的 Web 工程。
 work 是 Tomcat 工作时的目录，用来存放 Tomcat 运行时 jsp 翻译为 Servlet 的源码，和 Session 钝化的目录
 
+Servlet
+什么是 Servlet
+1、Servlet 是 JavaEE 规范之一。规范就是接口
+2、Servlet 就 JavaWeb 三大组件之一。三大组件分别是：Servlet 程序、Filter 过滤器、Listener 监听器。
+3、Servlet 是运行在服务器上的一个 java 小程序，它可以接收客户端发送过来的请求，并响应数据给客户端。
 
-p103
+如何实现Servlet
+1、编写一个类去实现 Servlet 接口
+2、实现 service 方法，处理请求，并响应数据
+3、到 web.xml 中去配置
+
+Servlet 的生命周期
+1、执行 Servlet 构造器方法
+ 2、执行 init 初始化方法
+ 第一、二步，是在第一次访问，的时候创建 Servlet 程序会调用。
+ 3、执行 service 方法
+ 第三步，每次访问都会调用。
+ 4、执行 destroy 销毁方法
+ 第四步，在 web 工程停止的时候调用。
+
+
+
+
+
+
+p126
 
 
 
