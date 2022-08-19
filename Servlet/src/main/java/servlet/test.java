@@ -1,6 +1,7 @@
 package servlet;
 
 import javax.servlet.*;
+import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
 /**
@@ -14,6 +15,12 @@ public class test implements Servlet {
     @Override
     public void init(ServletConfig servletConfig) throws ServletException {
         System.out.println("初始化");
+
+        System.out.println("别名是"+servletConfig.getServletName());
+        System.out.println(servletConfig.getInitParameter("url"));
+        System.out.println(servletConfig.getServletContext());
+
+
     }
 
     @Override
@@ -33,6 +40,12 @@ public class test implements Servlet {
      **/
 
     public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
+
+        System.out.println("访问");
+        HttpServletRequest httpServletRequest= (HttpServletRequest) servletRequest;
+        String method = httpServletRequest.getMethod();
+        System.out.println(method);
+
 
     }
 

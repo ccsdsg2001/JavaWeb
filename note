@@ -496,12 +496,35 @@ Servlet 的生命周期
  4、执行 destroy 销毁方法
  第四步，在 web 工程停止的时候调用。
 
+通过继承 HttpServlet 实现 Servlet 程序
+一般在实际项目开发中，都是使用继承 HttpServlet 类的方式去实现 Servlet 程序。
+1、编写一个类去继承 HttpServlet 类
+2、根据业务需要重写 doGet 或 doPost 方法
+3、到 web.xml 中的配置 Servlet 程序的访问地
 
+ServletConfig类
+三大作用
+1、可以获取 Servlet 程序的别名 servlet-name 的值
+servletConfig.getServletName()
+2、获取初始化参数 init-param
+servletConfig.getInitParameter("url")
+3、获取 ServletContext 对象
+servletConfig.getServletContext()
 
+ServerContext类
+什么是 ServletContext?
+1、ServletContext 是一个接口，它表示 Servlet 上下文对象
+2、一个 web 工程，只有一个 ServletContext 对象实例。
+3、ServletContext 对象是一个域对象。
+4、ServletContext 是在 web 工程部署启动的时候创建。在 web 工程停止的时候销毁。
+什么是域对象?
+域对象，是可以像 Map 一样存取数据的对象，叫域对象。
+这里的域指的是存取数据的操作范围，整个 web 工程。
+存数据 取数据 删除 数据
+Map put() get() remove()
+域对象 setAttribute() getAttribute() removeAttribute();
 
-
-
-p126
+p133
 
 
 

@@ -4,6 +4,7 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
+
 <!--    servlet标签给tomcat配置servlet程序-->
     <servlet>
         <servlet-name>ccsdsg</servlet-name>
@@ -16,4 +17,30 @@
         <servlet-name>ccsdsg</servlet-name>
         <url-pattern>/test</url-pattern>
     </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ccs</servlet-name>
+        <servlet-class>servlet.ccsdsg</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Servlettest</servlet-name>
+        <servlet-class>servlet.Servlettest</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Servlettest</servlet-name>
+        <url-pattern>/Servlettest</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ccs</servlet-name>
+        <url-pattern>/ccsdsg</url-pattern>
+    </servlet-mapping>
+
+
+
+
+
+
+
+
 </web-app>
