@@ -3,6 +3,16 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    <context-param>
+<!--        上下文参数-->
+        <param-name>username</param-name>
+        <param-value>context</param-value>
+    </context-param>
+    <context-param>
+<!--        上下文参数-->
+        <param-name>password</param-name>
+        <param-value>context1</param-value>
+    </context-param>
 
 
 <!--    servlet标签给tomcat配置servlet程序-->
@@ -27,6 +37,30 @@
         <servlet-name>Servlettest</servlet-name>
         <servlet-class>servlet.Servlettest</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ContextServlet</servlet-name>
+        <servlet-class>servlet.ContextServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Servlet1</servlet-name>
+        <servlet-class>servlet.Servlet1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Servlet1</servlet-name>
+        <url-pattern>/Servlet1</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>RequestApitest</servlet-name>
+        <servlet-class>servlet.RequestApitest</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RequestApitest</servlet-name>
+        <url-pattern>/RequestApitest</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ContextServlet</servlet-name>
+        <url-pattern>/ContextServlet</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>Servlettest</servlet-name>
         <url-pattern>/Servlettest</url-pattern>
