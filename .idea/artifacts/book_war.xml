@@ -9,6 +9,13 @@
     </properties>
     <root id="archive" name="book-1.0-SNAPSHOT.war">
       <element id="artifact" artifact-name="book:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="druid-1.1.9" />
+          <element id="library" level="project" name="commons-dbutils-1.3" />
+          <element id="library" level="project" name="mysql-connector-java-5.1.7-bin (2)" />
+        </element>
+      </element>
     </root>
   </artifact>
 </component>

@@ -38,7 +38,7 @@
 			}
 			var val3 = $("#code").val();
 			$.trim(val3);
-			if (val3!=null || val3==""){
+			if (val3==null || val3==""){
 				$("span.errorMsg").text("验证码不能为空");
 				return false;
 			}
