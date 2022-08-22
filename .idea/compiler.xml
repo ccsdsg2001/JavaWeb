@@ -10,11 +10,13 @@
         <module name="demo" />
         <module name="JSP" />
         <module name="book" />
+        <module name="ELjstl" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="book" target="17" />
       <module name="demo" target="17" />
+      <module name="ELjstl" target="17" />
       <module name="JSP" target="17" />
       <module name="Servlet" target="17" />
     </bytecodeTargetLevel>

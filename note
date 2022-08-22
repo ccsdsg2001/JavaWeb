@@ -909,4 +909,36 @@ web.xml 中的配置：
 <listener-class>com.atguigu.listener.MyServletContextListenerImpl</listener-class>
 </listener>
 
+EL表达式
+什么是 EL 表达式，EL 表达式的作用?
+EL 表达式的全称是：Expression Language。是表达式语言。
+EL 表达式的什么作用：EL 表达式主要是代替 jsp 页面中的表达式脚本在 jsp 页面中进行数据的输出。
+因为 EL 表达式在输出数据的时候，要比 jsp 的表达式脚本要简洁很多。
+<body>
+<%
+request.setAttribute("key","值");
+%>
+表达式脚本输出 key 的值是：
+<%=request.getAttribute("key1")==null?"":request.getAttribute("key1")%><br/>
+EL 表达式输出 key 的值是：${key1}
+</body>
+EL 表达式的格式是：${表达式}
+EL 表达式在输出 null 值的时候，输出的是空串。jsp 表达式脚本输出 null 值的时候，输出的是 null 字符串。
+
+EL 表达式搜索域数据的顺序
+EL 表达式主要是在 jsp 页面中输出数据。
+主要是输出域对象中的数据。
+当四个域中都有相同的 key 的数据的时候，EL 表达式会按照四个域的从小到大的顺序去进行搜索，找到就输出。
+<body>
+<%
+//往四个域中都保存了相同的 key 的数据。
+request.setAttribute("key", "request");
+session.setAttribute("key", "session");
+application.setAttribute("key", "application");
+pageContext.setAttribute("key", "pageContext");
+%>
+${ key }
+</body>
+
+
 p191
