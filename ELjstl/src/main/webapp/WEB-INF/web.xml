@@ -8,4 +8,22 @@
         <param-name>username</param-name>
         <param-value>root</param-value>
     </context-param>
+    <servlet>
+        <servlet-name>Upload</servlet-name>
+        <servlet-class>com.example.eljstl.UPloadservlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Download</servlet-name>
+        <servlet-class>com.example.eljstl.download</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Download</servlet-name>
+        <url-pattern>/download</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Upload</servlet-name>
+        <url-pattern>/upload</url-pattern>
+    </servlet-mapping>
+    
+    
 </web-app>
