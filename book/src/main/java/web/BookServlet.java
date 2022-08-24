@@ -1,6 +1,7 @@
 package web;
 
 import pojo.Book;
+import pojo.Page;
 import service.impl.BookService;
 import service.impl.BookServiceImpl;
 import utils.webUtils;
@@ -59,5 +60,20 @@ public class BookServlet extends BaseServlet {
         //4.请求转发页面
         request.getRequestDispatcher("/pages/manager/book_edit.jsp").forward(request,response);
     }
+
+    //处理分页功能
+    protected void page(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//     //1.获取请求的参数pageNo和pageSize
+        int pageNo=webUtils.parseInt(request.getParameter("pageNo"),1);
+        int pageSize=webUtils.parseInt(request.getParameter("pageSize"), Page.PAGE_SIZE);
+//        2.调用BookServicce.page:page对象
+        Page<Book> page = bookService.page(pageNo,pageSize);
+        page.setUrl("manager/bookServlet?action=page");
+        //3.保存page对象到request域中
+        request.setAttribute("page", page);
+        //4.请求转发页面
+        request.getRequestDispatcher("/pages/manager/book_manager.jsp").forward(request, response);
+    }
+
 
 }

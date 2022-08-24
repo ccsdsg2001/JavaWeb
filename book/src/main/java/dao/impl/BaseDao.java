@@ -60,12 +60,11 @@ public abstract class BaseDao {
         Connection connection = JDBCutils.getConnection();
 
         try {
-            queryRunner.query(connection,sql,new ScalarHandler(),args);
-            return null;
+            return queryRunner.query(connection, sql, new ScalarHandler(), args);
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            JDBCutils.close(connection);
+            JdbcUtils.close(connection);
         }
         return null;
     }
