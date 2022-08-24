@@ -14,10 +14,11 @@ import java.util.Map;
 public class webUtils {
     /**
      * 把Map中的值注入到对应的JavaBean属性中。
+     *
      * @param value
      * @param bean
      */
-    public static <T> T copyParamToBean(Map value , T bean ){
+    public static <T> T copyParamToBean(Map value, T bean) {
         try {
             System.out.println("注入之前：" + bean);
             /**
@@ -30,5 +31,21 @@ public class webUtils {
         }
         return bean;
     }
+
+    public static int parseInt(String strInt, int defaultValue) {
+        try {
+            return Integer.parseInt(strInt);
+        } catch (NumberFormatException e) {
+            e.printStackTrace();
+        }
+        return defaultValue;
+    }
 }
+
+
+
+
+
+
+
 
