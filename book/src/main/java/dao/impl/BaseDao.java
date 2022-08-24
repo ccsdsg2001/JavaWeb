@@ -1,7 +1,9 @@
 package dao.impl;
 
+import com.alibaba.druid.util.JdbcUtils;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
+import org.apache.commons.dbutils.handlers.BeanListHandler;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
 import utils.JDBCutils;
 
@@ -41,14 +43,14 @@ public abstract class BaseDao {
     }
 
     //返回集合的sql语句
-    public <T> List<T> queryForList(Class<T> type, String sql, Object...args){
+    public <T> List<T> queryForList(Class<T> type, String sql, Object... args) {
         Connection connection=JDBCutils.getConnection();
         try {
-            return (List<T>) queryRunner.query(connection, sql, new BeanHandler<T>(type), args);
+            return queryRunner.query(connection, sql, new BeanListHandler<T>(type), args);
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            JDBCutils.close(connection);
+            JdbcUtils.close(connection);
         }
         return null;
     }
