@@ -14,6 +14,8 @@
           <element id="library" level="project" name="druid-1.1.9" />
           <element id="library" level="project" name="commons-dbutils-1.3" />
           <element id="library" level="project" name="mysql-connector-java-5.1.7-bin (2)" />
+          <element id="library" level="application" name="commons-logging-1.1.1" />
+          <element id="library" level="application" name="commons-beanutils-1.8.0" />
         </element>
       </element>
     </root>
