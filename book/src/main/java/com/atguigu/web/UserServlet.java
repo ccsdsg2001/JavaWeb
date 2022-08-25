@@ -38,6 +38,8 @@ public class UserServlet extends BaseServlet {
             req.getRequestDispatcher("/pages/user/login.jsp").forward(req, resp);
         } else {
             // 登录 成功
+            //保存用户登录的信息
+            req.getSession().setAttribute("user", loginUser);
             //跳到成功页面login_success.html
             req.getRequestDispatcher("/pages/user/login_success.jsp").forward(req, resp);
         }
@@ -95,5 +97,10 @@ public class UserServlet extends BaseServlet {
 
     }
 
+    protected void logout(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.getSession().invalidate();
+        resp.sendRedirect(req.getContextPath());
+    }
 
-}
+
+    }
