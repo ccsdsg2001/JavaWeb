@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Servlet" />
+        <module name="Cookie-Session" />
         <module name="demo" />
         <module name="JSP" />
         <module name="book" />
@@ -15,6 +16,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="book" target="17" />
+      <module name="Cookie-Session" target="17" />
       <module name="demo" target="17" />
       <module name="ELjstl" target="17" />
       <module name="JSP" target="17" />

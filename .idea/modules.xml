@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BOOKStore/BOOKStore.iml" filepath="$PROJECT_DIR$/BOOKStore/BOOKStore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cookie-Session/Cookie-Session.iml" filepath="$PROJECT_DIR$/Cookie-Session/Cookie-Session.iml" />
       <module fileurl="file://$PROJECT_DIR$/ELjstl/ELjstl.iml" filepath="$PROJECT_DIR$/ELjstl/ELjstl.iml" />
       <module fileurl="file://$PROJECT_DIR$/JQuery/JQuery.iml" filepath="$PROJECT_DIR$/JQuery/JQuery.iml" />
       <module fileurl="file://$PROJECT_DIR$/JSP/JSP.iml" filepath="$PROJECT_DIR$/JSP/JSP.iml" />
