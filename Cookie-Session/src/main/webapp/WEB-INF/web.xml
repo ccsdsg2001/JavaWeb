@@ -11,4 +11,18 @@
         <servlet-name>CookieServlet</servlet-name>
         <url-pattern>/cookieServlet</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SeesionServlet</servlet-name>
+        <servlet-class>SessionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SeesionServlet</servlet-name>
+        <url-pattern>/seesionServlet</url-pattern>
+    </servlet-mapping>
+
+    <session-config>
+        <session-timeout>24</session-timeout>
+    </session-config>
+
 </web-app>
