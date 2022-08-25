@@ -4,14 +4,22 @@
 <head>
 <meta charset="UTF-8">
 <title>购物车</title>
-<%@include file="/pages/common/head.jsp"%>
+
+	<%-- 静态包含 base标签、css样式、jQuery文件 --%>
+	<%@ include file="/pages/common/head.jsp"%>
+
+
 </head>
 <body>
 	
 	<div id="header">
 			<img class="logo_img" alt="" src="static/img/logo.gif" >
 			<span class="wel_word">购物车</span>
-			<%@include file="/pages/common/login_success_menu.jsp"%>
+
+		<%--静态包含，登录 成功之后的菜单 --%>
+		<%@ include file="/pages/common/login_success_menu.jsp"%>
+
+
 	</div>
 	
 	<div id="main">
@@ -59,6 +67,10 @@
 	
 	</div>
 
+
+	<%--静态包含页脚内容--%>
 	<%@include file="/pages/common/footer.jsp"%>
+
+
 </body>
 </html>
