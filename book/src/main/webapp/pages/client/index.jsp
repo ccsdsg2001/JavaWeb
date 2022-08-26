@@ -8,6 +8,19 @@
 
 	<%-- 静态包含 base标签、css样式、jQuery文件 --%>
 	<%@ include file="/pages/common/head.jsp"%>
+	<script type="text/javascript">
+		$(function (){
+			$("button.addToCart").click(function () {
+				/**
+				 * 在事件响应的function函数 中，有一个this对象，这个this对象，是当前正在响应事件的dom对象
+				 * @type {jQuery}
+				 */
+				var bookId = $(this).attr("bookId");
+				location.href = "http://localhost:8080/book/cartServlet?action=addItem&id=" + bookId;
+
+			});
+		});
+	</script>
 
 
 </head>
@@ -79,8 +92,7 @@
 						<span class="sp2">${book.stock}</span>
 					</div>
 					<div class="book_add">
-						<button>加入购物车</button>
-					</div>
+						<button bookId="${book.id}" class="addToCart">加入购物车</button>					</div>
 				</div>
 			</div>
 			</c:forEach>

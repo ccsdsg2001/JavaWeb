@@ -18,6 +18,7 @@
           <element id="library" level="application" name="commons-beanutils-1.8.0" />
           <element id="library" level="application" name="taglibs-standard-impl-1.2.1 (2)" />
           <element id="library" level="application" name="taglibs-standard-spec-1.2.1" />
+          <element id="library" level="application" name="mykaptcha-2.3.2" />
         </element>
       </element>
     </root>

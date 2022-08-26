@@ -51,5 +51,6 @@
     <orderEntry type="library" name="mysql-connector-java-5.1.7-bin (3)" level="application" />
     <orderEntry type="library" name="taglibs-standard-impl-1.2.1 (3)" level="application" />
     <orderEntry type="library" name="taglibs-standard-spec-1.2.1 (2)" level="application" />
+    <orderEntry type="library" name="mykaptcha-2.3.2" level="application" />
   </component>
 </module>
