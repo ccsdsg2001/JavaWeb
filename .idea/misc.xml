@@ -5,6 +5,7 @@
     <file type="web" url="file://$PROJECT_DIR$/Cookie-Session" />
     <file type="web" url="file://$PROJECT_DIR$/demo" />
     <file type="web" url="file://$PROJECT_DIR$/ELjstl" />
+    <file type="web" url="file://$PROJECT_DIR$/Filter" />
     <file type="web" url="file://$PROJECT_DIR$/JSP" />
     <file type="web" url="file://$PROJECT_DIR$/Servlet" />
   </component>
@@ -17,6 +18,7 @@
         <option value="$PROJECT_DIR$/JSP/pom.xml" />
         <option value="$PROJECT_DIR$/ELjstl/pom.xml" />
         <option value="$PROJECT_DIR$/Cookie-Session/pom.xml" />
+        <option value="$PROJECT_DIR$/Filter/pom.xml" />
       </list>
     </option>
   </component>
