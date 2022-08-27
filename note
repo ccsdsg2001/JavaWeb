@@ -1737,9 +1737,62 @@ FilterChain.doFilter()方法的作用
 以上配置的路径，表示请求地址必须以.action 结尾才会拦截到
 Filter 过滤器它只关心请求的地址是否匹配，不关心请求的资源是否存在！！！
 
+ThreadLocal 的使用
+ThreadLocal 的作用，它可以解决多线程的数据安全问题。
+ThreadLocal 它可以给当前线程关联一个数据（可以是普通变量，可以是对象，也可以是数组，集合）
+ThreadLocal 的特点：
+1、ThreadLocal 可以为当前线程关联一个数据。（它可以像 Map 一样存取数据，key 为当前线程）
+2、每一个 ThreadLocal 对象，只能为当前线程关联一个数据，如果要为当前线程关联多个数据，就需要使用多个
+ThreadLocal 对象实例。
+3、每个 ThreadLocal 对象实例定义的时候，一般都是 static 类型
+4、ThreadLocal 中保存数据，在线程销毁后。会由 JVM 虚拟自动释放。
 
-
-
+代码如下：
+测试类：
+public class OrderService {
+public void createOrder(){
+String name = Thread.currentThread().getName();
+System.out.println("OrderService 当前线程[" + name + "]中保存的数据是：" +
+ThreadLocalTest.threadLocal.get());
+new OrderDao().saveOrder();
+}
+}
+public class OrderDao {
+public void saveOrder(){
+String name = Thread.currentThread().getName();
+System.out.println("OrderDao 当前线程[" + name + "]中保存的数据是：" +
+ThreadLocalTest.threadLocal.get());
+}
+}
+public class ThreadLocalTest {
+// public static Map<String,Object> data = new Hashtable<String,Object>();
+public static ThreadLocal<Object> threadLocal = new ThreadLocal<Object>();
+private static Random random = new Random();
+public static class Task implements Runnable {
+@Override
+public void run() {
+// 在 Run 方法中，随机生成一个变量（线程要关联的数据），然后以当前线程名为 key 保存到 map 中
+Integer i = random.nextInt(1000);
+// 获取当前线程名
+String name = Thread.currentThread().getName();
+System.out.println("线程["+name+"]生成的随机数是：" + i);
+// data.put(name,i);
+threadLocal.set(i);
+try {
+Thread.sleep(3000);
+} catch (InterruptedException e) {
+e.printStackTrace();
+}
+new OrderService().createOrder();
+// 在 Run 方法结束之前，以当前线程名获取出数据并打印。查看是否可以取出操作
+// Object o = data.get(name);
+Object o = threadLocal.get();
+System.out.println("在线程["+name+"]快结束时取出关联的数据是：" + o);
+}
+}
+public static void main(String[] args) {
+for (int i = 0; i < 3; i++){
+new Thread(new Task()).start();
 
 
 
