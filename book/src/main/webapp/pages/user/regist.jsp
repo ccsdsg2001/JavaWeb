@@ -14,6 +14,19 @@
 			$(function () {
 
 
+				$("#username").blur(function () {
+					//1 获取用户名
+					var username = this.value;
+					$.getJSON("http://localhost:8080/book/userServlet","action=ajaxExistsUsername&username=" + username,function (data) {
+						if (data.existsUsername) {
+							$("span.errorMsg").text("用户名已存在！");
+						} else {
+							$("span.errorMsg").text("用户名可用！");
+						}
+					});
+				});
+
+
 				$("#codeimg").click(function (){
 					this.src="${basePath}kaptcha.jpg?d"+new Date();
 				})

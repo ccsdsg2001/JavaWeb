@@ -19,6 +19,7 @@
           <element id="library" level="application" name="taglibs-standard-impl-1.2.1 (2)" />
           <element id="library" level="application" name="taglibs-standard-spec-1.2.1" />
           <element id="library" level="application" name="mykaptcha-2.3.2" />
+          <element id="library" level="module" name="gson" module-name="book" />
         </element>
       </element>
     </root>
