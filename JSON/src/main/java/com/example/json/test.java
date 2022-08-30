@@ -15,6 +15,6 @@ public class test {
 //        Locale locale=Locale.getDefault();
 //        System.out.println(locale);
 
-        ResourceBundle.getBundle();
+//        ResourceBundle.getBundle();
     }
 }

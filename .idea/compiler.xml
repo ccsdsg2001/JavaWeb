@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="NEWServlet" />
         <module name="Filter" />
         <module name="JSP" />
         <module name="book" />
@@ -24,6 +25,7 @@
       <module name="Filter" target="17" />
       <module name="JSON" target="17" />
       <module name="JSP" target="17" />
+      <module name="NEWServlet" target="17" />
       <module name="Servlet" target="17" />
     </bytecodeTargetLevel>
   </component>
