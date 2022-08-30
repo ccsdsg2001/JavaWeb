@@ -9,6 +9,7 @@
     </properties>
     <root id="archive" name="NEWServlet-1.0-SNAPSHOT.war">
       <element id="artifact" artifact-name="NEWServlet:war exploded" />
+      <element id="library" level="application" name="lib" />
     </root>
   </artifact>
 </component>

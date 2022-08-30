@@ -1,7 +1,6 @@
 <component name="libraryTable">
   <library name="commons-dbutils-1.3">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/book/src/main/webapp/WEB-INF/commons-dbutils-1.3.jar!/" />
       <root url="jar://$PROJECT_DIR$/../apache-tomcat-8.5.82/lib/jsp-api.jar!/" />
     </CLASSES>
     <JAVADOC />
