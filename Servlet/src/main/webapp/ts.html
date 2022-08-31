@@ -7,6 +7,6 @@
 </head>
 <body>
 <form th:object="${fruit}" th:text="${session}" th:value="*{fname}"> </form>
-<td th:onclick="|delfruit(${fruit.fid})|"></td>
+<td th:onclick="|delfruit(${fruit.fid})|"  th:href="@{/add.html}"></td>
 </body>
 </html>

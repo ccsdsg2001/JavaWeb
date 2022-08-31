@@ -1,4 +1,4 @@
-package myssm.basedao;
+package com.atguigu.myssm.basedao;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.ParameterizedType;
@@ -11,7 +11,7 @@ public abstract class BaseDAO<T> {
     public final String DRIVER = "com.mysql.jdbc.Driver" ;
     public final String URL = "jdbc:mysql://localhost:3306/fruitdb?useUnicode=true&characterEncoding=utf-8&useSSL=false";
     public final String USER = "root";
-    public final String PWD = "root" ;
+    public final String PWD = "123456" ;
 
     protected Connection conn ;
     protected PreparedStatement psmt ;
@@ -88,10 +88,13 @@ public abstract class BaseDAO<T> {
             setParams(psmt,params);
             int count = psmt.executeUpdate() ;
 
-            rs = psmt.getGeneratedKeys();
-            if(rs.next()){
-                return ((Long)rs.getLong(1)).intValue();
+            if(insertFlag){
+                rs = psmt.getGeneratedKeys();
+                if(rs.next()){
+                    return ((Long)rs.getLong(1)).intValue();
+                }
             }
+
             return count ;
         } catch (SQLException e) {
             e.printStackTrace();
