@@ -1,3 +1,4 @@
+<html xmlns:th="http://www.thymeleaf.org">
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +6,7 @@
     <title>Title</title>
 </head>
 <body>
-
+<form th:object="${fruit}" th:text="${session}" th:value="*{fname}"> </form>
+<td th:onclick="|delfruit(${fruit.fid})|"></td>
 </body>
 </html>
