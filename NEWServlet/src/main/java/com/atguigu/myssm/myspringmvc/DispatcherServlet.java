@@ -38,7 +38,7 @@ public class DispatcherServlet extends ViewBaseServlet{
             //1.创建DocumentBuilderFactory
             DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
             //2.创建DocumentBuilder对象
-            DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder() ;
+            DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
             //3.创建Document对象
             Document document = documentBuilder.parse(inputStream);
 

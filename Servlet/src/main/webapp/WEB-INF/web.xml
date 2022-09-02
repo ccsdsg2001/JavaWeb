@@ -15,11 +15,20 @@
     </context-param>
 
 
+    <context-param>
+        <param-name>context</param-name>
+        <param-value>csdsg</param-value>
+    </context-param>
+
 <!--    servlet标签给tomcat配置servlet程序-->
     <servlet>
         <servlet-name>ccsdsg</servlet-name>
 <!--        全类名-->
         <servlet-class>servlet.test</servlet-class>
+        <init-param>
+            <param-name>h</param-name>
+            <param-value>ccsdsg</param-value>
+        </init-param>
     </servlet>
 <!--    mapping标签给Servlet程序配置访问地址-->
     <servlet-mapping>
