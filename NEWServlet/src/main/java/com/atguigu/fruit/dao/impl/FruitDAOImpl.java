@@ -7,6 +7,7 @@ import com.atguigu.myssm.basedao.BaseDAO;
 import java.util.List;
 
 public class FruitDAOImpl extends BaseDAO<Fruit> implements FruitDAO {
+
     @Override
     public List<Fruit> getFruitList(String keyword , Integer pageNo) {
         return super.executeQuery("select * from t_fruit where fname like ? or remark like ? limit ? , 5" ,"%"+keyword+"%","%"+keyword+"%", (pageNo-1)*5);
@@ -19,7 +20,7 @@ public class FruitDAOImpl extends BaseDAO<Fruit> implements FruitDAO {
 
     @Override
     public void updateFruit(Fruit fruit) {
-        String sql = "update t_fruit set fname = ? , price = ? , fcount = ? , remark = ? where fid = ? " ;
+        String sql = "updat t_fruit set fname = ? , price = ? , fcount = ? , remark = ? where fid = ? " ;
         super.executeUpdate(sql,fruit.getFname(),fruit.getPrice(),fruit.getFcount(),fruit.getRemark(),fruit.getFid());
     }
 
