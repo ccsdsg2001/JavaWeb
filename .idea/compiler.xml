@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <option name="BUILD_PROCESS_HEAP_SIZE" value="2000" />
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="NEWServlet" />
+        <module name="QQZONE" />
         <module name="Filter" />
         <module name="JSP" />
         <module name="book" />
@@ -26,6 +28,7 @@
       <module name="JSON" target="17" />
       <module name="JSP" target="17" />
       <module name="NEWServlet" target="17" />
+      <module name="QQZONE" target="17" />
       <module name="Servlet" target="17" />
     </bytecodeTargetLevel>
   </component>

@@ -9,6 +9,7 @@
     <file type="web" url="file://$PROJECT_DIR$/JSON" />
     <file type="web" url="file://$PROJECT_DIR$/JSP" />
     <file type="web" url="file://$PROJECT_DIR$/NEWServlet" />
+    <file type="web" url="file://$PROJECT_DIR$/QQZONE" />
     <file type="web" url="file://$PROJECT_DIR$/Servlet" />
   </component>
   <component name="MavenProjectsManager">
@@ -23,6 +24,7 @@
         <option value="$PROJECT_DIR$/Filter/pom.xml" />
         <option value="$PROJECT_DIR$/JSON/pom.xml" />
         <option value="$PROJECT_DIR$/NEWServlet/pom.xml" />
+        <option value="$PROJECT_DIR$/QQZONE/pom.xml" />
       </list>
     </option>
   </component>
