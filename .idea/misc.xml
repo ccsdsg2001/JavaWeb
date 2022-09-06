@@ -10,6 +10,8 @@
     <file type="web" url="file://$PROJECT_DIR$/JSP" />
     <file type="web" url="file://$PROJECT_DIR$/NEWServlet" />
     <file type="web" url="file://$PROJECT_DIR$/QQZONE" />
+    <file type="web" url="file://$PROJECT_DIR$/qqzonebackup" />
+    <file type="web" url="file://$PROJECT_DIR$/qqzonetest" />
     <file type="web" url="file://$PROJECT_DIR$/Servlet" />
   </component>
   <component name="MavenProjectsManager">

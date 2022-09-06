@@ -29,6 +29,8 @@
       <module name="JSP" target="17" />
       <module name="NEWServlet" target="17" />
       <module name="QQZONE" target="17" />
+      <module name="qqzonebackup" target="17" />
+      <module name="qqzonetest" target="17" />
       <module name="Servlet" target="17" />
     </bytecodeTargetLevel>
   </component>

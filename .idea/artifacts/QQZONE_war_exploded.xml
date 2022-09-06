@@ -6,6 +6,10 @@
         <element id="directory" name="classes">
           <element id="module-output" name="QQZONE" />
         </element>
+        <element id="directory" name="lib">
+          <element id="library" level="application" name="attoparser-2.0.5.RELEASE" />
+          <element id="library" level="application" name="lib" />
+        </element>
       </element>
       <element id="javaee-facet-resources" facet="QQZONE/web/Web" />
     </root>

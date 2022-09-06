@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <beans>
-    <bean id="userBasicDAO" class="dao.impl.UserBasicDAOImp"/>
-    <bean id="topicDAO" class="dao.impl.TopicDAOImpl"/>
+    <bean id="userBasicDAO" class="main.java.dao.impl.UserBasicDAOImp"/>
+    <bean id="topicDAO" class="main.java.dao.impl.TopicDAOImpl"/>
 
-    <bean id="userBasicService" class="service.impl.UserBasicServiceImpl">
+    <bean id="userBasicService" class="main.java.service.impl.UserBasicServiceImpl">
         <property name="userBasicDAO" ref="userBasicDAO"/>
     </bean>
 
-    <bean id="topicService" class="service.impl.TopicServiceImpl">
+    <bean id="topicService" class="main.java.service.impl.TopicServiceImpl">
         <property name="topicDAO" ref="topicDAO"/>
     </bean>
 
-    <bean id="user" class="controller.UserController">
+    <bean id="user" class="main.java.controller.UserController">
         <property name="userBasicService" ref="userBasicService"/>
         <property name="topicService" ref="topicService"/>
 
     </bean>
 
-    <bean id="page" class="myssm.myspringmvc.PageController"/>
+    <bean id="page" class="main.java.myssm.myspringmvc.PageController"/>
 
 
 
