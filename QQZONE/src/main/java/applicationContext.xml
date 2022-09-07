@@ -3,13 +3,22 @@
 <beans>
     <bean id="userBasicDAO" class="dao.impl.UserBasicDAOImp"/>
     <bean id="topicDAO" class="dao.impl.TopicDAOImpl"/>
-
+    <bean id="hostReplyDAO" class="dao.impl.HostReplyAOImpl"/>
+    <bean id="replyDAO" class="dao.impl.ReplyDAOImpl"/>
     <bean id="userBasicService" class="service.impl.UserBasicServiceImpl">
         <property name="userBasicDAO" ref="userBasicDAO"/>
     </bean>
 
     <bean id="topicService" class="service.impl.TopicServiceImpl">
         <property name="topicDAO" ref="topicDAO"/>
+        <property name="replyService" ref="replyService"/>
+    </bean>
+    <bean id="replyService" class="service.impl.ReplyServiceImpl">
+        <property name="replyDAO" ref="replyDAO"/>
+        <property name="hostReplyService" ref="hostReplyService"/>
+    </bean>
+    <bean id="hostReplyService" class="service.impl.HostReplyServiceImpl">
+        <property name="hostReplyService" ref="hostReplyDAO"/>
     </bean>
 
     <bean id="user" class="controller.UserController">
@@ -19,6 +28,9 @@
     </bean>
 
     <bean id="page" class="myssm.myspringmvc.PageController"/>
+    <bean id="topic" class="controller.TopicController">
+        <property name="topicService" ref="topicService"/>
+    </bean>
 
 
 

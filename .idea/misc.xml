@@ -9,6 +9,7 @@
     <file type="web" url="file://$PROJECT_DIR$/JSON" />
     <file type="web" url="file://$PROJECT_DIR$/JSP" />
     <file type="web" url="file://$PROJECT_DIR$/NEWServlet" />
+    <file type="web" url="file://$PROJECT_DIR$/newzone" />
     <file type="web" url="file://$PROJECT_DIR$/QQZONE" />
     <file type="web" url="file://$PROJECT_DIR$/qqzonebackup" />
     <file type="web" url="file://$PROJECT_DIR$/qqzonetest" />
@@ -27,6 +28,7 @@
         <option value="$PROJECT_DIR$/JSON/pom.xml" />
         <option value="$PROJECT_DIR$/NEWServlet/pom.xml" />
         <option value="$PROJECT_DIR$/QQZONE/pom.xml" />
+        <option value="$PROJECT_DIR$/newzone/pom.xml" />
       </list>
     </option>
   </component>

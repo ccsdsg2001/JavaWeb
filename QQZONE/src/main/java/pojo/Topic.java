@@ -1,6 +1,6 @@
 package pojo;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 import java.util.List;
 
 /**
@@ -11,20 +11,24 @@ public class Topic {
     private Integer id;
     private String title;
     private String content;
-    private Date topicDate;
+    private LocalDateTime topicDate;
     private UserBasic author;
     private List<Reply> replyList;
 
     public Topic() {
     }
 
-    public Topic(Integer id, String title, String content, Date topicDate, UserBasic author, List<Reply> replyList) {
+    public Topic(Integer id, String title, String content, LocalDateTime topicDate, UserBasic author, List<Reply> replyList) {
         this.id = id;
         this.title = title;
         this.content = content;
         this.topicDate = topicDate;
         this.author = author;
         this.replyList = replyList;
+    }
+
+    public Topic(Integer id) {
+
     }
 
     public List<Reply> getReplyList() {
@@ -59,11 +63,11 @@ public class Topic {
         this.content = content;
     }
 
-    public Date getTopicDate() {
+    public LocalDateTime getTopicDate() {
         return topicDate;
     }
 
-    public void setTopicDate(Date topicDate) {
+    public void setTopicDate(LocalDateTime topicDate) {
         this.topicDate = topicDate;
     }
 

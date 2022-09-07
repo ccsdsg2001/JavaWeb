@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="QQZONE:war">
+    <output-path>$PROJECT_DIR$/QQZONE/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>QQZONE</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="QQZONE-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="QQZONE:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="application" name="attoparser-2.0.5.RELEASE" />
+          <element id="library" level="application" name="lib" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

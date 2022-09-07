@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="newzone:war">
+    <output-path>$PROJECT_DIR$/newzone/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>newzone</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="newzone-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="newzone:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="attoparser-2.0.5.RELEASE (3)" module-name="newzone" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

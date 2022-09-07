@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="NEWServlet" />
+        <module name="newzone" />
         <module name="QQZONE" />
         <module name="Filter" />
         <module name="JSP" />
@@ -28,6 +29,7 @@
       <module name="JSON" target="17" />
       <module name="JSP" target="17" />
       <module name="NEWServlet" target="17" />
+      <module name="newzone" target="17" />
       <module name="QQZONE" target="17" />
       <module name="qqzonebackup" target="17" />
       <module name="qqzonetest" target="17" />
