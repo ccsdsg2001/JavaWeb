@@ -14,7 +14,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 
 @WebServlet("*.do")
-public class DispatcherServlet extends ViewBaseServlet {
+public class DispatcherServlet extends ViewBaseServlet{
 
     private BeanFactory beanFactory ;
 

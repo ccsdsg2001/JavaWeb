@@ -1,0 +1,38 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="myssm">
+    <output-path>$PROJECT_DIR$/out/artifacts/myssm</output-path>
+    <root id="archive" name="myssm.jar">
+      <element id="directory" name="myssm">
+        <element id="directory" name="basedao">
+          <element id="file-copy" path="$PROJECT_DIR$/QQZONE/src/main/java/myssm/basedao/BaseDAO.java" />
+          <element id="file-copy" path="$PROJECT_DIR$/QQZONE/src/main/java/myssm/basedao/ConnUtil.java" />
+          <element id="file-copy" path="$PROJECT_DIR$/QQZONE/src/main/java/myssm/basedao/DAOException.java" />
+        </element>
+        <element id="directory" name="filters">
+          <element id="file-copy" path="$PROJECT_DIR$/QQZONE/src/main/java/myssm/filters/CharacterEncodingFilter.java" />
+          <element id="file-copy" path="$PROJECT_DIR$/QQZONE/src/main/java/myssm/filters/OpenSessionInViewFilter.java" />
+        </element>
+        <element id="directory" name="ioc">
+          <element id="file-copy" path="$PROJECT_DIR$/QQZONE/src/main/java/myssm/ioc/applicationContext.xml" />
+          <element id="file-copy" path="$PROJECT_DIR$/QQZONE/src/main/java/myssm/ioc/BeanFactory.java" />
+          <element id="file-copy" path="$PROJECT_DIR$/QQZONE/src/main/java/myssm/ioc/ClassPathXmlApplicationContext.java" />
+        </element>
+        <element id="directory" name="listeners">
+          <element id="file-copy" path="$PROJECT_DIR$/QQZONE/src/main/java/myssm/listeners/ContextLoaderListener.java" />
+        </element>
+        <element id="directory" name="myspringmvc">
+          <element id="file-copy" path="$PROJECT_DIR$/QQZONE/src/main/java/myssm/myspringmvc/DispatcherServlet.java" />
+          <element id="file-copy" path="$PROJECT_DIR$/QQZONE/src/main/java/myssm/myspringmvc/DispatcherServletException.java" />
+          <element id="file-copy" path="$PROJECT_DIR$/QQZONE/src/main/java/myssm/myspringmvc/PageController.java" />
+          <element id="file-copy" path="$PROJECT_DIR$/QQZONE/src/main/java/myssm/myspringmvc/ViewBaseServlet.java" />
+        </element>
+        <element id="directory" name="trans">
+          <element id="file-copy" path="$PROJECT_DIR$/QQZONE/src/main/java/myssm/trans/TransactionManager.java" />
+        </element>
+        <element id="directory" name="util">
+          <element id="file-copy" path="$PROJECT_DIR$/QQZONE/src/main/java/myssm/util/StringUtil.java" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

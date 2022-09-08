@@ -1,7 +1,5 @@
 package myssm.myspringmvc;
 
-
-
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.WebContext;
 import org.thymeleaf.templatemode.TemplateMode;

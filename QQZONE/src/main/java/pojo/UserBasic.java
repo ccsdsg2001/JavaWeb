@@ -2,16 +2,12 @@ package pojo;
 
 import java.util.List;
 
-/**
- * @author cc
- * @date 2022年09月05日 22:30
- */
 public class UserBasic {
-    private Integer id;
-    private String loginId;
-    private String nickName;
-    private String pwd;
-    private String headImg;
+    private Integer id ;
+    private String loginId ;
+    private String nickName ;
+    private String pwd ;
+    private String headImg ;
 
     private UserDetail userDetail ;     //1:1
     private List<Topic> topicList ;     //1:N

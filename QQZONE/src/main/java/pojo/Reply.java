@@ -2,45 +2,26 @@ package pojo;
 
 import java.util.Date;
 
-/**
- * @author cc
- * @date 2022年09月05日 22:30
- */
 public class Reply {
-    private Integer id;
-    private String content;
-    private Date replyDate;
-    private UserBasic author;
-    private Topic topic;
+    private Integer id ;
+    private String content ;
+    private Date replyDate ;
+    private UserBasic author ;  //M:1
+    private Topic topic ;       //M:1
 
-    private HostReply hostReply;
+    private HostReply hostReply ;   //1:1
 
-    public Reply() {
-    }
+    public Reply(){}
 
     public Reply(Integer id) {
         this.id = id;
     }
 
-    public Reply(Integer id, String content, Date replyDate, UserBasic author, Topic topic, HostReply hostReply) {
-        this.id = id;
+    public Reply(String content, Date replyDate, UserBasic author, Topic topic) {
         this.content = content;
         this.replyDate = replyDate;
         this.author = author;
         this.topic = topic;
-        this.hostReply = hostReply;
-    }
-
-    @Override
-    public String toString() {
-        return "Reply{" +
-                "id=" + id +
-                ", content='" + content + '\'' +
-                ", replyDate=" + replyDate +
-                ", author=" + author +
-                ", topic=" + topic +
-                ", hostReply=" + hostReply +
-                '}';
     }
 
     public Integer getId() {

@@ -1,42 +1,21 @@
 package pojo;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 
-/**
- * @author cc
- * @date 2022年09月05日 22:30
- */
 public class Topic {
-    private Integer id;
-    private String title;
-    private String content;
-    private LocalDateTime topicDate;
-    private UserBasic author;
-    private List<Reply> replyList;
+    private Integer id ;
+    private String title ;
+    private String content ;
+    private Date topicDate ;
+    private UserBasic author ;          //M:1
 
-    public Topic() {
-    }
+    private List<Reply> replyList ;     //1:N
 
-    public Topic(Integer id, String title, String content, LocalDateTime topicDate, UserBasic author, List<Reply> replyList) {
-        this.id = id;
-        this.title = title;
-        this.content = content;
-        this.topicDate = topicDate;
-        this.author = author;
-        this.replyList = replyList;
-    }
+    public Topic(){}
 
     public Topic(Integer id) {
-
-    }
-
-    public List<Reply> getReplyList() {
-        return replyList;
-    }
-
-    public void setReplyList(List<Reply> replyList) {
-        this.replyList = replyList;
+        this.id = id;
     }
 
     public Integer getId() {
@@ -63,11 +42,11 @@ public class Topic {
         this.content = content;
     }
 
-    public LocalDateTime getTopicDate() {
+    public Date getTopicDate() {
         return topicDate;
     }
 
-    public void setTopicDate(LocalDateTime topicDate) {
+    public void setTopicDate(Date topicDate) {
         this.topicDate = topicDate;
     }
 
@@ -79,15 +58,11 @@ public class Topic {
         this.author = author;
     }
 
-    @Override
-    public String toString() {
-        return "Topic{" +
-                "id=" + id +
-                ", title='" + title + '\'' +
-                ", content='" + content + '\'' +
-                ", topicDate=" + topicDate +
-                ", author=" + author +
-                ", replyList=" + replyList +
-                '}';
+    public List<Reply> getReplyList() {
+        return replyList;
+    }
+
+    public void setReplyList(List<Reply> replyList) {
+        this.replyList = replyList;
     }
 }
