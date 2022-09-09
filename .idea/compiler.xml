@@ -17,23 +17,41 @@
         <module name="Servlet" />
         <module name="JSON" />
         <module name="Cookie-Session" />
+        <module name="booknew" />
         <module name="demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="book" target="17" />
+      <module name="booknew" target="17" />
       <module name="Cookie-Session" target="17" />
       <module name="demo" target="17" />
       <module name="ELjstl" target="17" />
       <module name="Filter" target="17" />
+      <module name="finalBook" target="17" />
       <module name="JSON" target="17" />
       <module name="JSP" target="17" />
       <module name="NEWServlet" target="17" />
       <module name="newzone" target="17" />
       <module name="QQZONE" target="17" />
-      <module name="qqzonebackup" target="17" />
-      <module name="qqzonetest" target="17" />
       <module name="Servlet" target="17" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-parameters" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Cookie-Session" options="" />
+      <module name="ELjstl" options="" />
+      <module name="Filter" options="" />
+      <module name="JSON" options="" />
+      <module name="JSP" options="" />
+      <module name="NEWServlet" options="" />
+      <module name="QQZONE" options="" />
+      <module name="Servlet" options="" />
+      <module name="book" options="" />
+      <module name="booknew" options="" />
+      <module name="demo" options="" />
+      <module name="newzone" options="" />
+    </option>
   </component>
 </project>

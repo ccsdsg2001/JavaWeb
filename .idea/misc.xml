@@ -2,10 +2,12 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/book" />
+    <file type="web" url="file://$PROJECT_DIR$/booknew" />
     <file type="web" url="file://$PROJECT_DIR$/Cookie-Session" />
     <file type="web" url="file://$PROJECT_DIR$/demo" />
     <file type="web" url="file://$PROJECT_DIR$/ELjstl" />
     <file type="web" url="file://$PROJECT_DIR$/Filter" />
+    <file type="web" url="file://$PROJECT_DIR$/finalBook" />
     <file type="web" url="file://$PROJECT_DIR$/JSON" />
     <file type="web" url="file://$PROJECT_DIR$/JSP" />
     <file type="web" url="file://$PROJECT_DIR$/NEWServlet" />
@@ -29,6 +31,8 @@
         <option value="$PROJECT_DIR$/NEWServlet/pom.xml" />
         <option value="$PROJECT_DIR$/QQZONE/pom.xml" />
         <option value="$PROJECT_DIR$/newzone/pom.xml" />
+        <option value="$PROJECT_DIR$/finalBook/pom.xml" />
+        <option value="$PROJECT_DIR$/booknew/pom.xml" />
       </list>
     </option>
   </component>
