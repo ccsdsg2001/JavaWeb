@@ -2,7 +2,8 @@ package com.atguigu.book.dao.Impl;
 
 import com.atguigu.book.dao.BookDAO;
 import com.atguigu.book.pojo.Book;
-import com.atguigu.myssm.basedao.BaseDAO;
+import myssm.basedao.BaseDAO;
+
 
 import java.util.List;
 

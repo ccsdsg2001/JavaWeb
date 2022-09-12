@@ -1,8 +1,7 @@
 package myssm.myspringmvc;
 
-
-import myssm.ioc.BeanFactory;
-import myssm.util.StringUtil;
+import com.atguigu.myssm.ioc.BeanFactory;
+import com.atguigu.myssm.util.StringUtil;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -10,6 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 
@@ -101,6 +101,11 @@ public class DispatcherServlet extends ViewBaseServlet{
                     if(methodReturnStr.startsWith("redirect:")){        //比如：  redirect:fruit.do
                         String redirectStr = methodReturnStr.substring("redirect:".length());
                         response.sendRedirect(redirectStr);
+                    }else if(methodReturnStr.startsWith("json:")){
+                        String jsonStr = methodReturnStr.substring("json:".length());
+                        PrintWriter out = response.getWriter();
+                        out.print(jsonStr);
+                        out.flush();
                     }else{
                         super.processTemplate(methodReturnStr,request,response);    // 比如：  "edit"
                     }

@@ -3,7 +3,8 @@ package com.atguigu.book.dao.Impl;
 import com.atguigu.book.dao.CartItemDAO;
 import com.atguigu.book.pojo.CartItem;
 import com.atguigu.book.pojo.User;
-import com.atguigu.myssm.basedao.BaseDAO;
+import myssm.basedao.BaseDAO;
+
 
 import java.util.List;
 

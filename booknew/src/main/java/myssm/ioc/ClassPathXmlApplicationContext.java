@@ -1,7 +1,6 @@
 package myssm.ioc;
 
-
-import myssm.util.StringUtil;
+import com.atguigu.myssm.util.StringUtil;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;

@@ -5,6 +5,7 @@
     <file type="web" url="file://$PROJECT_DIR$/booknew" />
     <file type="web" url="file://$PROJECT_DIR$/Cookie-Session" />
     <file type="web" url="file://$PROJECT_DIR$/demo" />
+    <file type="web" url="file://$PROJECT_DIR$/demo01" />
     <file type="web" url="file://$PROJECT_DIR$/ELjstl" />
     <file type="web" url="file://$PROJECT_DIR$/Filter" />
     <file type="web" url="file://$PROJECT_DIR$/finalBook" />
@@ -33,6 +34,7 @@
         <option value="$PROJECT_DIR$/newzone/pom.xml" />
         <option value="$PROJECT_DIR$/finalBook/pom.xml" />
         <option value="$PROJECT_DIR$/booknew/pom.xml" />
+        <option value="$PROJECT_DIR$/demo01/pom.xml" />
       </list>
     </option>
   </component>

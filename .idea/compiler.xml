@@ -7,18 +7,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="NEWServlet" />
         <module name="newzone" />
-        <module name="QQZONE" />
-        <module name="Filter" />
+        <module name="demo01" />
         <module name="JSP" />
         <module name="book" />
-        <module name="ELjstl" />
-        <module name="Servlet" />
         <module name="JSON" />
-        <module name="Cookie-Session" />
         <module name="booknew" />
         <module name="demo" />
+        <module name="NEWServlet" />
+        <module name="QQZONE" />
+        <module name="Filter" />
+        <module name="ELjstl" />
+        <module name="Servlet" />
+        <module name="Cookie-Session" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -26,6 +27,7 @@
       <module name="booknew" target="17" />
       <module name="Cookie-Session" target="17" />
       <module name="demo" target="17" />
+      <module name="demo01" target="17" />
       <module name="ELjstl" target="17" />
       <module name="Filter" target="17" />
       <module name="finalBook" target="17" />
@@ -51,6 +53,7 @@
       <module name="book" options="" />
       <module name="booknew" options="" />
       <module name="demo" options="" />
+      <module name="demo01" options="" />
       <module name="newzone" options="" />
     </option>
   </component>

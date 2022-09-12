@@ -3,7 +3,7 @@ package com.atguigu.book.dao.Impl;
 import com.atguigu.book.dao.OrderDAO;
 import com.atguigu.book.pojo.OrderBean;
 import com.atguigu.book.pojo.User;
-import com.atguigu.myssm.basedao.BaseDAO;
+import myssm.basedao.BaseDAO;
 
 import java.math.BigDecimal;
 import java.util.List;

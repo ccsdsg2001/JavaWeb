@@ -1,9 +1,7 @@
 package myssm.listeners;
 
-
-
-import myssm.ioc.BeanFactory;
-import myssm.ioc.ClassPathXmlApplicationContext;
+import com.atguigu.myssm.ioc.BeanFactory;
+import com.atguigu.myssm.ioc.ClassPathXmlApplicationContext;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletContextEvent;
