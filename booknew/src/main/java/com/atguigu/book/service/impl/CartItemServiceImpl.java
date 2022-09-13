@@ -56,6 +56,8 @@ public class CartItemServiceImpl implements CartItemService {
         for(CartItem cartItem : cartItemList){
             Book book = bookService.getBook(cartItem.getBook().getId());
             cartItem.setBook(book);
+            //此处需要调用getXj()，目的是执行getXj()内部的代码，让book的price乘以buyCount，从而计算出xj这个属性的值
+            cartItem.getXj();
         }
 
         return cartItemList;
@@ -70,6 +72,9 @@ public class CartItemServiceImpl implements CartItemService {
         }
         Cart cart = new Cart();
         cart.setCartItemMap(cartItemMap);
+
+
+
 
         return cart;
     }

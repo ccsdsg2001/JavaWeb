@@ -2,7 +2,8 @@ package com.atguigu.book.dao.Impl;
 
 import com.atguigu.book.dao.OrderItemDAO;
 import com.atguigu.book.pojo.OrderItem;
-import com.atguigu.myssm.basedao.BaseDAO;
+import myssm.basedao.BaseDAO;
+
 
 public class OrderItemDAOImpl extends BaseDAO<OrderItem> implements OrderItemDAO {
     @Override

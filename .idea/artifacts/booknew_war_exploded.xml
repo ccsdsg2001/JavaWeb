@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="booknew:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/booknew_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="booknew" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="attoparser-2.0.5.RELEASE (3)" module-name="booknew" />
+          <element id="library" level="module" name="javaassist" module-name="booknew" />
+          <element id="library" level="module" name="fruid" module-name="booknew" />
+          <element id="library" level="project" name="gson-2.2.4 (2)" />
+        </element>
+      </element>
+      <element id="library" level="application" name="myssm1" />
+      <element id="javaee-facet-resources" facet="booknew/web/Web" />
+    </root>
+  </artifact>
+</component>

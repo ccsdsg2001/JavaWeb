@@ -1,6 +1,8 @@
 package myssm.trans;
 
-import com.atguigu.myssm.basedao.ConnUtil;
+
+
+import myssm.basedao.ConnUtil;
 
 import java.sql.Connection;
 import java.sql.SQLException;
